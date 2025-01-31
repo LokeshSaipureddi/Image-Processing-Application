@@ -1,0 +1,78 @@
+Code status questionnaire:
+
+Please complete this questionnaire by selecting the appropriate answer for each question. Then include this file in the code that you send to your customers.
+
+Import/export features:
+
+Load a PPM file implementation: Y/N
+Script command to load a PPM file: Y/N
+Load PPM file from GUI: Y/N
+
+Load a PNG/JPG file implementation: Y/N
+Script command to load a PNG/JPG file: Y/N
+Load PNG/JPG file from GUI: Y/N
+
+Save a PPM file implementation: Y/N
+Script command to save a PPM file: Y/N
+Save PPM file from GUI: Y/N
+
+Save a PNG/JPG file implementation: Y/N
+Script command to save a PNG/JPG file: Y/N
+Save PNG/JPG file from GUI: Y/N
+
+
+Image manipulations:
+
+Visualize various image components implementation: Y/N
+Script commands to load various image components: Y/N
+Visualize various image components from GUI: Y/N
+
+Flip an image horizontally implementation: Y/N
+Script command to flip an image horizontally: Y/N
+Flip an image horizontally from GUI: Y/N
+
+Flip an image vertically implementation: Y/N
+Script command to flip an image vertically: Y/N
+Flip an image vertically from GUI: Y/N
+
+Brighten/darken image implementation: Y/N
+Script command to bright/darken image: Y/N
+
+Blur an image implementation: Y/N
+Script command to blur an image: Y/N
+Blur an image from GUI: Y/N
+
+Sharpen an image implementation: Y/N
+Script command to sharpen an image: Y/N
+Sharpen an image from GUI: Y/N
+
+Sepia implementation: Y/N
+Script command for sepia: Y/N
+Sepia from GUI: Y/N
+
+Compression implementation: Y/N
+Script command for Compression: Y/N
+Compression from GUI: Y/N
+
+Histogram visualization from GUI: Y/N
+
+Levels-adjust implementation: Y/N
+Script command for levels adjustment: Y/N
+Levels-adjust from GUI: Y/N
+
+Color correction implementation: Y/N
+Script command for Color correction: Y/N
+Color correction from GUI: Y/N
+
+Split preview implementation: Y/N
+Split preview in GUI: Y/N
+
+
+
+
+Program:
+
+Program runs by running main? Y/N
+Program runs correctly using -file option? Y/N
+Program runs correctly using -text option? Y/N
+Program runs correctly (opens GUI) with no command-line options? Y/N

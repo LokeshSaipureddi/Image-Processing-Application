@@ -1,0 +1,108 @@
+The Following commands are supported by the program:
+
+1. load image-path image-name: Load an image from the specified path and refer henceforth in the program by the given image name.
+
+2. save image-path image-name: Save the image with the given name to the specified path which should include the name of the file.
+
+3. red-component image-name dest-image-name: Create an image with the red-component of the image with the given name, refer to it henceforth in the program by the given destination name.
+
+4. green-component image-name dest-image-name: Create an image with the green-component of the image with the given name, refer to it henceforth in the program by the given destination name.
+
+5. blue-component image-name dest-image-name: Create an image with the blue-component of the image with the given name, refer to it henceforth in the program by the given destination name.
+
+6. value-component image-name dest-image-name [p]: Create a grayscale image with value of the image with the given name, refer to it henceforth in the program by the given destination name. Optional argument p, applys the process only on the left p% of the image and leaves the rest image unaltered in the destination name.
+
+7. luma-component image-name dest-image-name [p]: Create a grayscale image with luma of the image with the given name, refer to it henceforth in the program by the given destination name. Optional argument p, applys the process only on the left p% of the image and leaves the rest image unaltered in the destination name.
+
+
+8. intensity-component image-name dest-image-name [p]: Create a grayscale image with intensity of the image with the given name, refer to it henceforth in the program by the given destination name. Optional argument p, applys the process only on the left p% of the image and leaves the rest image unaltered in the destination name.
+
+
+9. horizontal-flip image-name dest-image-name: Flip an image horizontally to create a new image, referred to henceforth by the given destination name.
+
+10. vertical-flip image-name dest-image-name: Flip an image vertically to create a new image, referred to henceforth by the given destination name.
+
+11. brighten increment image-name dest-image-name: brighten the image by the given increment to create a new image, referred to henceforth by the given destination name. The increment may be positive (brightening) or negative (darkening).
+
+12. rgb-split image-name dest-image-name-red dest-image-name-green dest-image-name-blue: split the given image into three images containing its red, green and blue components respectively. These would be the same images that would be individually produced with the red-component, green-component and blue-component commands.
+
+13. rgb-combine image-name red-image green-image blue-image: Combine the three images that are individually red, green and blue into a single image that gets its red, green and blue components from the three images respectively.
+
+14. blur image-name dest-image-name [p]: blur the given image and store the result in another image with the given name. Optional argument p, applys the process only on the left p% of the image and leaves the rest image unaltered in the destination name.
+
+
+15. sharpen image-name dest-image-name [p]: sharpen the given image and store the result in another image with the given name. Optional argument p, applys the process only on the left p% of the image and leaves the rest image unaltered in the destination name.
+
+
+16. sepia image-name dest-image-name [p]: produce a sepia-toned version of the given image and store the result in another image with the given name. Optional argument p, applys the process only on the left p% of the image and leaves the rest image unaltered in the destination name.
+
+
+17. run script-file: Load and run the script commands in the specified file.
+
+18. compress percentage image-name dest-image-name: compress the given image with the given percentage and store the result in another image with the given name.
+
+19. histogram image-name dest-image-name: create a 256x256 histogram of red, green and blue channels as line graphs and store in another image with the given name.
+
+20. color-correct image-name dest-image-name [p]: align the first histogram peak of individual channels of the given image (considering values greater than 10 and lesser than 245 in each channel), and store in another image with the given name. Optional argument p, applys the process only on the left p% of the image and leaves the rest image unaltered in the destination name.
+
+
+21. levels-adjust b m w image-name dest-image-name [p]: Level ajust the image with b, m and w are the three relevant black, mid and white values respectively. These values should be ascending in that order, and should be within 0 and 255 for this command to work correctly. Optional argument p, applys the process only on the left p% of the image and leaves the rest image unaltered in the destination name.
+
+refer to the example script file for an example.
+
+
+
+Instructions to use our GUI: 
+
+1. Load an Image: For loading an image you can click on the load button and select the image that needs to uploaded. Only ppm, png, jpg, and jpeg format files will be loaded by the file loader.
+
+2. Sepia : For performing Sepia operation, you can click Sepia button. After clicking the button, a pop window will appear which will ask you slide between the split values. 
+    You can preview the image by sliding the split value and if you want to perform that operation you can click ok button and the changes will be seen in the image panel.
+    You can also see the histogram image changing in the real time while you are changing the split values. If you don't want to make changes you can click the cancel button. 
+
+3. Grey Scale: For performing grey scale operation, you can click grey scale button. After clicking the button, a pop window will appear which will ask you slide between the split values. 
+    You can preview the image by sliding the split value and if you want to perform that operation you can click ok button and the changes will be seen in the image panel.
+    You can also see the histogram image changing in the real time while you are changing the split values. If you don't want to make changes you can click the cancel button.
+
+4. Red Component: For performing red component operation, you can click red component button. After clicking the button, a pop window will appear which will ask you slide between the split values. 
+    You can preview the image by sliding the split value and if you want to perform that operation you can click ok button and the changes will be seen in the image panel.
+    You can also see the histogram image changing in the real time while you are changing the split values. If you don't want to make changes you can click the cancel button.  
+
+5. Green Component: For performing green component operation, you can click green component button. After clicking the button, a pop window will appear which will ask you slide between the split values. 
+    You can preview the image by sliding the split value and if you want to perform that operation you can click ok button and the changes will be seen in the image panel.
+    You can also see the histogram image changing in the real time while you are changing the split values. If you don't want to make changes you can click the cancel button.  
+
+6. Blue Component: For performing blue component operation, you can click blue component button. After clicking the button, a pop window will appear which will ask you slide between the split values. 
+    You can preview the image by sliding the split value and if you want to perform that operation you can click ok button and the changes will be seen in the image panel.
+    You can also see the histogram image changing in the real time while you are changing the split values. If you don't want to make changes you can click the cancel button. 
+
+7. Horizontal Flip: For performing horizontal flip operation, you can click horizontal flip button. After clicking the button, a pop window will appear which will ask you slide between the split values. 
+    You can preview the image by sliding the split value and if you want to perform that operation you can click ok button and the changes will be seen in the image panel.
+    You can also see the histogram image changing in the real time while you are changing the split values. If you don't want to make changes you can click the cancel button.     
+
+8. Vertical Flip: For performing vertical flip operation, you can click vertical flip button. After clicking the button, a pop window will appear which will ask you slide between the split values. 
+    You can preview the image by sliding the split value and if you want to perform that operation you can click ok button and the changes will be seen in the image panel.
+    You can also see the histogram image changing in the real time while you are changing the split values. If you don't want to make changes you can click the cancel button.           
+
+9. Blur: For performing blur operation, you can click blur button. After clicking the button, a pop window will appear which will ask you slide between the split values. 
+    You can preview the image by sliding the split value and if you want to perform that operation you can click ok button and the changes will be seen in the image panel.
+    You can also see the histogram image changing in the real time while you are changing the split values. If you don't want to make changes you can click the cancel button.
+
+10. Sharpen: For performing sharpen operation, you can click sharpen button. After clicking the button, a pop window will appear which will ask you slide between the split values. 
+    You can preview the image by sliding the split value and if you want to perform that operation you can click ok button and the changes will be seen in the image panel.
+    You can also see the histogram image changing in the real time while you are changing the split values. If you don't want to make changes you can click the cancel button. 
+
+11. Color-Correct: For performing color correct operation, you can click color correct button. After clicking the button, a pop window will appear which will ask you slide between the split values. 
+    You can preview the image by sliding the split value and if you want to perform that operation you can click ok button and the changes will be seen in the image panel.
+    You can also see the histogram image changing in the real time while you are changing the split values. If you don't want to make changes you can click the cancel button. 
+
+12. Compression: For performing the compression operation, you can click on the compressin button. After clicking the button, a pop up window will appear which will ask you to slide between the 
+    compression value. You can the select a compression value and on clickong ok the operation will be applied on the image. you can see the change in the image panel. 
+    If you don't want to apply that operation you can click the cancel button. 
+
+13. Level-Adjust: For performing the level adjust button, you can click on th elevel adjust button. After clicking the button, a pop up window will appear to select the split value and the values for black, 
+     mid, and the white respectively. The values for black, mid, and white should be black<mid<white. If user tries to enter lesser value for white than black, the slider won't let you do that. Similarly, for the
+     mid and white values also. After clicking ok the operation will be applied on that image.
+
+14. Save: You can save the image by clicking on the save button. It will allow you to enter the name of a file to be saved. If you done some operation and if you want to close the UI the interface will
+    you to save that image or not.               
